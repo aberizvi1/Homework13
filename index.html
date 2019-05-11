@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="navbar-header col-xs-4 col-md-4">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/healthcare.jpeg" width="100%">
+                </a>
+              </div>
+              <div class="text-center col-xs-8 col-md-8">
+                <h2>D3 Times</h2>
+                <h3>American FactFinder</h3>
+                <h5>The State of Public Health</h5>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <br>
+    <div class="row pt-4">
+      <div id="ccontainer" , class="col-xs-12  col-md-9">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h5>Introduction</h5>
+          <p>
+            The American Community Survey (ACS) is an ongoing survey that provides vital information on a yearly basis
+            about our nation and its people. Information from the survey generates data that help determine how more
+            than $675 billion in federal and state funds are distributed each year.
+          </p>
+          <p>
+            Through the ACS, we know more about jobs and occupations, educational attainment, veterans, whether people
+            own or rent their homes, and other topics. Public officials, planners, and entrepreneurs use this
+            information to assess the past and plan the future. When you respond to the ACS, you are doing your part to
+            help your community plan for hospitals and schools, support school lunch programs, improve emergency
+            services, build bridges, and inform businesses looking to add jobs and expand to new markets, and more.
+          </p>
+          <p>
+            This analysis is based on 2014 ACS 1-Year estimates. The dataset contains median and percentage values for
+            various demographic and public health factors like
+            poverty levels, income, age, smoking history, etc.
+          </p>
+        </div>
+        <div class="article">
+          <h5>Correlations Discovered Between Health Risks and Age, Income</h5>
+          <p>
+            We can make below observations from the data analyzed:
+            <ul>
+              <li>MS is the state with top poverty level, while TX has most people who lack health insurance.</li>
+              <li>NH has least poverty levels.</li>
+              <li>NH has least poverty levels.</li>
+              <li>WV has highest percentage of people who are smokers while UT has the least.</li>
+              <li>Majority of smokers fall into age group 35 to 40.</li>
+              <li>NJ has highest median income, while MS has the least (which correlates with the poverty level
+                observation).</li>
+              <li>In general, lower income people seem to smoke more.</li>
+              <li>MS and WV top in obesity levels.</li>
+              <li>UT has least median age.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div class="fixed-bottom">
+    <footer class="footer-copyright bg-success pt-1" style="height: 25px">
+      <p class="bg-secondary text-white text-center"><small>© KD017@Data Bootcamp - University of Minnesota, All
+          Rights Reserved 2019</small>
+      </p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
